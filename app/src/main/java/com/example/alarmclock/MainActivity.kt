@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
             time = calendar.timeInMillis + calendar.timeInMillis % 60000
 
             if (System.currentTimeMillis() > time){
-                    time = if ( Calendar.AM_PM ==0 ){
+                    time = if ( Calendar.AM_PM == 0 ){
                         time + 100*60*60*12
                 }
                 else {
